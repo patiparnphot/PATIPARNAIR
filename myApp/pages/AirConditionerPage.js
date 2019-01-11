@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import IdolPage from '../containers/IdolPage.js';
+import AirConditionerContainer from '../containers/AirConditionerContainer';
 import Header from '../containers/Header.js';
 
-export default class Idolpage extends Component {
+export default class AirConditionerPage extends Component {
   render() {
     return (
       <div>
         <Header />
         <div classname="container">
-          <IdolPage id={this.props.params.id} />
+          <AirConditionerContainer id={this.props.params.id} />
         </div>
       </div>
     );

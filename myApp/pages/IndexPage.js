@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import IdolsList from '../containers/IndexPage.js';
+import AirConditionerList from '../containers/IndexPage.js';
 import Header from '../containers/Header.js';
 
 class IndexPage extends Component {
@@ -8,7 +8,7 @@ class IndexPage extends Component {
       <div>
         <Header />
         <div classname="container">
-          <IdolsList />
+          <AirConditionerList />
         </div>
       </div>
     );

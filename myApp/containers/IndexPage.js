@@ -1,18 +1,17 @@
 import { connect } from 'react-redux';
-import { fetchIdols, fetchIdolsSuccess, fetchIdolsFailure } from '../actions/idols';
-import IdolsList from '../components/IndexPage';
-import { FETCH_IDOLS_SUCCESS } from '../actions/idols';
+import { fetchAirConditioners, fetchAirConditionersSuccess, fetchAirConditionersFailure } from '../actions/airConditioners';
+import AirConditionerList from '../components/IndexPage';
 
 const mapStateToProps = state => ({
-  idolsList: state.idols.idolsList
+  airConditionerList: state.airCondittioners.airConditionerList
 })
 
 const mapDispatchToProps = dispatch => ({
-  fetchIdols: () => {
-      dispatch(fetchIdols()).then((response) => {
-            !response.error ? dispatch(fetchIdolsSuccess(response.payload.data)) : dispatch(fetchIdolsFailure(response.payload.data));
+  fetchAirConditioners: () => {
+      dispatch(fetchAirConditioners()).then((response) => {
+            !response.error ? dispatch(fetchAirConditionersSuccess(response.payload.data)) : dispatch(fetchAirConditionersFailure(response.payload.data));
       });
     }
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(IdolsList);
+export default connect(mapStateToProps, mapDispatchToProps)(AirConditionerList);

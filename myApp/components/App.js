@@ -10,7 +10,7 @@ export default class App extends React.Component {
         {this.props.children}
         <footer key="footer" className="footer">
             <div className="container">
-              <p className="text-muted">&copy; PATIPARNAIR APP 2018 | <Link to="/">Home</Link> | <Link to="/addAirConditioner">Add your PRODUCTS</Link></p>
+              <p className="text-muted">&copy; PATIPARNAIR APP 2018</p>
             </div>
         </footer>
       </div>

@@ -7,17 +7,17 @@ export default class IdolsList extends React.Component {
     this.props.fetchIdols();
   }
 
-  renderIdols(idols) {
-    return idols.map((idol) => {
+  renderAirConditioners(airConditioners) {
+    return idols.map((airConditioner) => {
       return (
         <div className="col-md-3 col-sm-6">
           <div className="thumbnail">
-            <img src={ idol.image }/>
+            <img src={ airConditioner.image }/>
             <div className="caption">
-              <h4>{ idol.nickname }</h4>
+              <h4>{ airConditioner.nickname }</h4>
             </div>
             <p>
-              <Link className="btn btn-primary btn-lg" to={"/idols/" + idol.id}>More INFO</Link>
+              <Link className="btn btn-primary btn-lg" to={"/airConditioners/" + airConditioner.id}>More INFO</Link>
             </p>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default class IdolsList extends React.Component {
 
   render() {
     
-    const { idols, loading, error } = this.props.idolsList;
+    const { airConditioners, loading, error } = this.props.airConditionerList;
 
     if(loading) {
       return <div className="container"><h1>Idols</h1><h3>Loading...</h3></div>      
@@ -42,12 +42,12 @@ export default class IdolsList extends React.Component {
           <h1><span className="glyphicon glyphicon-tent"></span> Welcome To BNK48 App</h1>
           <p>a community which Ota share their beloved idol story</p>
           <p>
-            <Link className="btn btn-primary btn-lg" to="/shareidol">Share your Idol on our App</Link>
+            nbnbnkjjk
           </p>
         </div>
       </div>
       <div className="row text-center">
-        {this.renderIdols(idols)}
+        {this.renderAirConditioners(airConditioners)}
       </div>
       </div>
     );

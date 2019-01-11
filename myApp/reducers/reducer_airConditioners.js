@@ -7,7 +7,7 @@ import {
 
 
 	const INITIAL_STATE = {
-    airConditionersList: {
+    airConditionerList: {
       airConditioners: [],
       error: null,
       loading: false

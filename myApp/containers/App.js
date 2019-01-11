@@ -8,7 +8,6 @@ const mapDispatchToProps = (dispatch) => {
 
 function mapStateToProps(state) {
   return {
-    member: state.member
   };
 }
 
