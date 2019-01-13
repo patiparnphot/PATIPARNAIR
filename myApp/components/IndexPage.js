@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 export default class IdolsList extends React.Component {
   componentWillMount() {
-    this.props.fetchIdols();
+    this.props.fetchAirConditioners();
   }
 
   renderAirConditioners(airConditioners) {

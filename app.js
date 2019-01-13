@@ -7,18 +7,17 @@ var express         = require("express"),
     flash           = require("connect-flash"),
     methodOverride  = require("method-override"),
     http            = require("http"),
-    path            = require("path");
-    // airConditioner        = require("./models/airConditioner"),
-    // Comment     = require("./models/comment");
+    path            = require("path"),
+    airConditioner  = require("./models/airConditioner");
 
-app.use(express.static('./myApp'));
+app.use(express.static('./js'));
 
 // Requiring API routes
-// var airConditionerRoutes = require("./routes/airConditioner"),
+var airConditionerRoutes = require("./routes/airConditioner");
 //     commentRoutes    = require("./routes/comment");
 
 // Database setup
-// mongoose.connect("mongodb://patiparn.phot:bomgeo57@ds255958.mlab.com:55958/bnk48" || "mongodb://localhost/bnk48");
+mongoose.connect("mongodb://patiparn.phot:bomgeo57@ds255958.mlab.com:55958/bnk48" || "mongodb://localhost/bnk48");
 
 // Parsers for POST data
 app.use(bodyParser.json({limit: '50mb'}));
@@ -28,7 +27,7 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true }));
 app.use(methodOverride('_method'));
 
 // Set our api routes
-// app.use("/api/airConditioners", airConditionerRoutes);
+app.use("/api/airConditioners", airConditionerRoutes);
 // app.use("/api/airConditioners/:id/comments", commentRoutes);
 
 // Catch all other routes and return the index file

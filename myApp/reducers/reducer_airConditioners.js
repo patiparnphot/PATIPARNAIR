@@ -34,14 +34,14 @@ export default function(state = INITIAL_STATE, action) {
   switch(action.type) {
 
   case FETCH_AIRCONDITIONERS:
-  	return { ...state, airConditionersList: {airConditioners:[], error: null, loading: true} }; 
+  	return { ...state, airConditionerList: {airConditioners:[], error: null, loading: true} }; 
   case FETCH_AIRCONDITIONERS_SUCCESS:
-    return { ...state, airConditionersList: {airConditioners: action.payload, error:null, loading: false} };
+    return { ...state, airConditionerList: {airConditioners: action.payload, error:null, loading: false} };
   case FETCH_AIRCONDITIONERS_FAILURE:
     error = action.payload || {message: action.payload.message};
-    return { ...state, airConditionersList: {airConditioners: [], error: error, loading: false} };
+    return { ...state, airConditionerList: {airConditioners: [], error: error, loading: false} };
   case RESET_AIRCONDITIONERS:
-    return { ...state, airConditionersList: {airConditioners: [], error:null, loading: false} };
+    return { ...state, airConditionerList: {airConditioners: [], error:null, loading: false} };
 
   case FETCH_AIRCONDITIONER:
     return { ...state, activeAirConditioner: {...state.activeAirConditioner, loading: true}};

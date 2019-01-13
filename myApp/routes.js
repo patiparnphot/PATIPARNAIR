@@ -3,7 +3,6 @@ import { Route, IndexRoute } from 'react-router';
 import App from './pages/App';
 import IndexPage from './pages/IndexPage';
 import AirConditionerPage from './pages/AirConditionerPage';
-// import ShareIdol from './pages/ShareIdol';
 import NotFoundPage from './components/NotFoundPage';
 
 const routes = (

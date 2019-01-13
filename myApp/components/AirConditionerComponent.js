@@ -48,19 +48,19 @@ export default class IdolPage extends React.Component {
       <div className="thumbnail" >
         <img className="img-responsive" src={ airConditioner.image }/>
         <div className="caption-full">
-          <h4>Firstname:{idol.firstname}  Lastname:{idol.lastname}</h4>
-          <h4>Nickname:{idol.nickname}  AKA:{idol.aka}</h4>
-          <h4>Birthday:{idol.birthday}</h4>
-          <h4>Height:{idol.height}</h4>
-          <h4>Bloodgroup:{idol.bloodgroup} </h4>
-          <h4>Address:{idol.address} </h4>
-          <h4>FavColor:{idol.favcolor} </h4>
-          <h4>FavFood:{idol.favfood} </h4>
-          <h4>Hobby:{idol.hobby} </h4>
-          <h4>Language:{idol.lang} </h4>
-          <h4>Education in University:{idol.university} </h4>
-          <h4>Education in Highschool:{idol.highschool} </h4>
-          <h4>Description:{idol.description} </h4>
+          <h4>Firstname:{airConditioner.firstname}  Lastname:{airConditioner.lastname}</h4>
+          <h4>Nickname:{airConditioner.nickname}  AKA:{airConditioner.aka}</h4>
+          <h4>Birthday:{airConditioner.birthday}</h4>
+          <h4>Height:{airConditioner.height}</h4>
+          <h4>Bloodgroup:{airConditioner.bloodgroup} </h4>
+          <h4>Address:{airConditioner.address} </h4>
+          <h4>FavColor:{airConditioner.favcolor} </h4>
+          <h4>FavFood:{airConditioner.favfood} </h4>
+          <h4>Hobby:{airConditioner.hobby} </h4>
+          <h4>Language:{airConditioner.lang} </h4>
+          <h4>Education in University:{airConditioner.university} </h4>
+          <h4>Education in Highschool:{airConditioner.highschool} </h4>
+          <h4>Description:{airConditioner.description} </h4>
           <p>
             <em>Submitted By: Somelink</em>
           </p>
