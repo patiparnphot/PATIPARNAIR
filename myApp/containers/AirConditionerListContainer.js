@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { fetchAirConditioners, fetchAirConditionersSuccess, fetchAirConditionersFailure } from '../actions/airConditioners';
-import AirConditionerList from '../components/IndexPage';
+import AirConditionerListComponent from '../components/AirConditionerListComponent';
 
 const mapStateToProps = state => ({
   airConditionerList: state.airCondittioners.airConditionerList
@@ -14,4 +14,4 @@ const mapDispatchToProps = dispatch => ({
     }
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(AirConditionerList);
+export default connect(mapStateToProps, mapDispatchToProps)(AirConditionerListComponent);

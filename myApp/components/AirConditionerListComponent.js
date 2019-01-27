@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 
-export default class IdolsList extends React.Component {
+export default class AirConditionerListComponent extends React.Component {
   componentWillMount() {
     this.props.fetchAirConditioners();
   }

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import AirConditionerList from '../containers/IndexPage.js';
+import AirConditionerListContainer from '../containers/AirConditionerListContainer.js';
 import Header from '../containers/Header.js';
 
-class IndexPage extends Component {
+class AirConditionerListPage extends Component {
   render() {
     return (
       <div>
         <Header />
         <div classname="container">
-          <AirConditionerList />
+          <AirConditionerListContainer />
         </div>
       </div>
     );
@@ -16,4 +16,4 @@ class IndexPage extends Component {
 }
 
 
-export default IndexPage;
+export default AirConditionerListPage;

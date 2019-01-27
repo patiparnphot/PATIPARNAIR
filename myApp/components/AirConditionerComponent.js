@@ -6,7 +6,7 @@ function Submit(text){
   return console.log(text);
 }
 
-export default class IdolPage extends React.Component {
+export default class AirConditionerComponent extends React.Component {
   componentDidMount() {
     this.props.fetchAirConditioner();
   }
