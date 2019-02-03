@@ -7,7 +7,7 @@ class AirConditionerListPage extends Component {
     return (
       <div>
         <Header />
-        <div classname="container">
+        <div className="container">
           <AirConditionerListContainer />
         </div>
       </div>

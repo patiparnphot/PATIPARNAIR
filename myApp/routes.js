@@ -9,6 +9,7 @@ const routes = (
   <Route path="/" component={App}>
     <IndexRoute component={AirConditionerListPage}/>
     <Route path="/airConditioners/:id" component={AirConditionerPage}/>
+    <Route path="**" component={NotFoundPage}/>
   </Route>
 );
 

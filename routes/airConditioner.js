@@ -17,7 +17,7 @@ router.get("/", function(req, res, next){
 
 //IDOL - get a single idol
 router.get("/:id", function(req, res, next) {
-  Idol.findById(req.params.id).populate("comments").exec(function(err, currentlyIdol){
+  Idol.findById(req.params.id).exec(function(err, currentlyIdol){
     if (err) return next(err);
     console.log(currentlyIdol);
     res.json(currentlyIdol);

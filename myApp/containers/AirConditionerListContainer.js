@@ -3,12 +3,13 @@ import { fetchAirConditioners, fetchAirConditionersSuccess, fetchAirConditioners
 import AirConditionerListComponent from '../components/AirConditionerListComponent';
 
 const mapStateToProps = state => ({
-  airConditionerList: state.airCondittioners.airConditionerList
+  airConditionerList: state.airConditioners.airConditionerList
 })
 
 const mapDispatchToProps = dispatch => ({
   fetchAirConditioners: () => {
       dispatch(fetchAirConditioners()).then((response) => {
+        console.log(response);
             !response.error ? dispatch(fetchAirConditionersSuccess(response.payload.data)) : dispatch(fetchAirConditionersFailure(response.payload.data));
       });
     }

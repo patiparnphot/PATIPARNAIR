@@ -7,7 +7,7 @@ export default class AirConditionerPage extends Component {
     return (
       <div>
         <Header />
-        <div classname="container">
+        <div className="container">
           <AirConditionerContainer id={this.props.params.id} />
         </div>
       </div>

@@ -8,12 +8,12 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     fetchAirConditioner: () => {
       dispatch(fetchAirConditioner(ownProps.id)).then((response) => {
-            !response.error ? dispatch(fetchAirConditionerSuccess(response.payload.data)) : dispatch(fetchAirConditionerFailure(response.payload.data));
+        !response.error ? dispatch(fetchAirConditionerSuccess(response.payload.data)) : dispatch(fetchAirConditionerFailure(response.payload.data));
       });
     },
     deleteAirConditioner: () => {
       dispatch(deleteAirConditioner(ownProps.id)).then((response) => {
-            !response.error ? dispatch(deleteAirConditionerSuccess(response.payload.data)) : dispatch(deleteAirConditionerFailure(response.payload.data));
+        !response.error ? dispatch(deleteAirConditionerSuccess(response.payload.data)) : dispatch(deleteAirConditionerFailure(response.payload.data));
       });
     }
   };
@@ -22,7 +22,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 
 function mapStateToProps(state, ownProps) {
   return {
-    activeAirconditioner: state.airConditioners.activeAirconditioner,
+    activeAirConditioner: state.airConditioners.activeAirConditioner,
     deletedAirConditioner: state.airConditioners.deletedAirConditioner,
     airConditionerId: ownProps.id
   };

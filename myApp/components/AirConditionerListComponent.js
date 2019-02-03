@@ -8,7 +8,7 @@ export default class AirConditionerListComponent extends React.Component {
   }
 
   renderAirConditioners(airConditioners) {
-    return idols.map((airConditioner) => {
+    return airConditioners.map((airConditioner) => {
       return (
         <div className="col-md-3 col-sm-6">
           <div className="thumbnail">
@@ -17,7 +17,7 @@ export default class AirConditionerListComponent extends React.Component {
               <h4>{ airConditioner.nickname }</h4>
             </div>
             <p>
-              <Link className="btn btn-primary btn-lg" to={"/airConditioners/" + airConditioner.id}>More INFO</Link>
+              <Link className="btn btn-primary btn-lg" to={"/airConditioners/" + airConditioner._id}>More INFO</Link>
             </p>
           </div>
         </div>
@@ -42,7 +42,7 @@ export default class AirConditionerListComponent extends React.Component {
           <h1><span className="glyphicon glyphicon-tent"></span> Welcome To BNK48 App</h1>
           <p>a community which Ota share their beloved idol story</p>
           <p>
-            nbnbnkjjk
+            STARTO!!!
           </p>
         </div>
       </div>
